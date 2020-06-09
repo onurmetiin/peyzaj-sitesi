@@ -1,0 +1,344 @@
+/* GENERAL SETTINGS */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+
+}
+body {
+      background:white;
+      color: #3f3f3f;
+      font: 14px / 28px arial;
+      font-family: 'Raleway';
+}
+
+h1 {
+  font-size: 52px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.sectionHeader {
+  background: #550D16;
+  border-bottom: 6px solid #000;
+  height: 60px;
+  color: #fff;
+  display: inline-block;
+  line-height: 60px;
+  font-size: 24px;
+  padding: 5px 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.sectionArea {
+    padding: 80px 0;
+}
+
+h3 {
+  font-size: 16px;
+  color: #500D16;
+  font-weight: bold;
+  transition: all .5s ease;
+}
+
+h4 {font-weight: bold;
+  text-decoration: underline;}
+
+h5 {text-align: center;
+    font-weight: bold;
+    font-size:18px;
+    text-decoration: underline;
+}
+
+.logoalt img{
+  width: 400px;
+  position: relative;
+  left: 0;
+}
+/* GRID SETTINGS */
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.featuresBody .container, .tarihBody .container {
+  justify-content: space-between;
+}
+
+.col3 {
+    flex-grow: 1;
+    width: 33.33½;
+}
+
+.tarihBody .container{
+  justify-content: space-between;
+}
+
+.col2 {
+  flex-grow: 1;
+  width: 50%;
+  padding: 20px;
+}
+
+.egitim{
+  text-align: center;
+  font-weight: bold;
+}
+
+.iletisim{
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.gonderbut input{
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+}
+
+/* HOME SETTING */
+
+header .logo {
+  margin-right: auto;
+}
+
+header .logo img{
+  display: block;
+  height: 80px;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li a {
+  padding: 27px 17px;
+  display: block;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #333;
+  transition: all .5s ease;
+}
+
+.menu li a:last-child {
+  padding-right: 5;
+}
+
+.menu li:hover a{
+      background: #500D16;
+      color: #fff;
+      text-align: center;
+}
+
+#mainSlider {
+    height: 500px;
+    background: url('../img/mainhome.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#mainSlider2{
+    height: 500px;
+    background: url('../img/arkaplan3.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#mainSlider3{
+  height: 500px;
+  background: url('../img/about.jpg') center center no-repeat;
+  background-size: cover;
+}
+.slider {
+    width: 100%;
+}
+
+#mainCaption {
+  height: 500px;
+  background: rgba(0,0,0, .3);
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+.featuresTop {
+  text-align: center;
+}
+
+.item {
+  padding: 10px 20px;
+}
+
+.zoom {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.zoom img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all .5s ease;
+}
+
+.item .itemtext {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #500D16;
+}
+
+.item:hover .zoom img {
+  transform: scale(1.40);
+}
+
+.item:hover h3 {
+  color: #fff;
+}
+
+.item:hover .itemtext{
+  background: #500D16;
+  color: white;
+  transition: all .5s ease;
+}
+
+.btnDetail {
+  color: #500D16;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #500d16;
+  transition: all .5s ease;
+}
+
+.item:hover .btnDetail{
+  color: white;
+  border:1px solid white;
+}
+
+.itemtext p{
+  margin: 20px 0;
+}
+
+.contenttic {
+  font-weight: bold;
+}
+
+#parallax {
+  background: linear-gradient(
+    rgba(0,0,0, .1),
+    rgba(0,0,0, .7)
+    ),
+    url('../img/tema4.jpg');
+
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+}
+
+#parallax p{
+  color: white;
+}
+
+.tarihTop {
+  text-align: center;
+}
+
+.tarihContainer {
+  position: relative;
+  width: 100%;
+}
+
+.imageOver {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tarihOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(80,13,22,.7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.tarihContainer:hover .tarihOverlay {
+  width: 100%;
+}
+
+.tarihText {
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tarihOverlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgba(80,13,22,.7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.tarihContainer:hover .tarihOverlay2 {
+  width: 100%;
+  left: 0;
+}
+
+ footer {
+   background: #8a8a8a;
+   text-align: center;
+   height: 100px;
+   }
+
+  .footerItem {
+    padding: 20px;
+    }
+
+footer .col3{
+  position: relative;
+  bottom: 60px;
+  right: 80px;
+}
+
+    .footerlinks li a{
+      text-decoration: none;
+      color: white;
+      letter-spacing: 2px;
+      transition: .3s ease;
+    }
+
+.footerlinks a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+footer h3{
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
