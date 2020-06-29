@@ -1,2 +1,2 @@
 # peyzaj-sitesi
-first project, %90 complated, non-responsive 
+first project, %90 completed, non-responsive 
